@@ -167,15 +167,91 @@ console.log(score);
 //console.log(age, age+3, `the age is ${age}`) //undefined bc no value was written
 
 //booleans: def as true/false
-console.log(true,false, "true", "false") //these are NOT strings unless you have '' or ""
+//console.log(true,false, "true", "false") //these are NOT strings unless you have '' or ""
 
 //methods can return booleans
-let email = 'meow@gmail.com';
-let names = ['mario', 'luigi', 'toad'];
+//let email = 'meow@gmail.com';
+//let names = ['mario', 'luigi', 'toad'];
 //let result  = email.includes('!')
  //if the method includes=true, not=false
- let result = names.includes('luigi');
-console.log(result);
+ //let result = names.includes('luigi');
+//console.log(result);
 
 //1:07 time stamp
 
+//14-10-25, stop at 26:40
+// use conditional statment for checking conditions
+//If (some condtion is true) {
+//    do something...
+// }
+
+//for loops
+
+//for(let i = 0; i < 5; i++){
+//console.log('in loop:',i);
+//}
+
+//console.log('loop finished');
+
+//no semicolons for loops at the end
+//{}= closing
+// 2nd=is the condition, 1st is an expression...only execute code if it is true. i=0 and is less than 5 so it is true.
+
+//const names= ['shaun', 'mario', 'luigi'];
+
+//for(let i = 0; i < names.length; i++) {
+    // console.log(names[i]);
+    //let html = `<div>${names[i]}</div>`;
+   // console.log(html);
+//}
+
+//interation: 1 cycle of data
+
+// while loops, exactly the same as for loop
+//difference=syntax
+//while i is an infinite loop, could cause a crash if i isn't defined properly
+
+//const names = ['shaun', 'mario', 'luigi'];
+//let i = 0;
+//while(i < 5){
+  // console.log('in loop:',i);
+  // i++;
+//}
+
+//let i = 4;
+
+//do {
+   // console.log('val of i is:', i);
+ //   i++;
+//} while (i < 5);
+
+// if statements
+
+/* const age = 25;
+
+if(age > 20){
+    console.log('you are over 20 years old');
+}
+
+const ninjas = ['shaun', 'ryu', 'chun-li', 'yoshi'];
+if(ninjas.length > 3){
+    console.log("that's a lot of ninjas");
+}
+    //{} used as "then"
+//used double quotes bc you used ' in that's in the string
+
+*/
+
+/*const password = 'p@ssword7654'; 
+if (password.length >= 12){
+    console.log('that password is strong');
+} else if(password.length >= 8){
+    console.log('that password is long enough');
+} else {
+    console.log('password is not long enough');
+}
+*/
+
+//we want a message to appear if it is false too
+//use else statement
+//only 1 code block will run
