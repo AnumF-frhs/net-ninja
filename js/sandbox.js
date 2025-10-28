@@ -177,7 +177,7 @@ console.log(score);
  //let result = names.includes('luigi');
 //console.log(result);
 
-//1:07 time stamp
+//01:07 time stamp
 
 //14-10-25, stop at 26:40
 // use conditional statment for checking conditions
@@ -255,3 +255,60 @@ if (password.length >= 12){
 //we want a message to appear if it is false too
 //use else statement
 //only 1 code block will run
+
+//28/10...net ninja #4..functions
+// to recall the function: showScores(), can define a code once and recall in multiple 
+//function declaration
+//function greet() {
+  //  console.log('hello there');
+
+//}
+
+//function expression, arguments and parameters
+//const speak = function(name = 'luigi', time = 'night'){ //lines 268-270 is known as a function expression. add a ; at the end of {} bc it is an expression
+  //  console.log('good ${time} ${name}');
+//};
+
+/*greet();
+greet();
+greet();
+*/
+ //speak();
+ //speak ('shaun', 'day'); //these values can override the values.
+
+//returning values
+
+//const speak = function(name = 'luigi', time = 'night'){
+//    console.log(`good ${time} ${name}`);
+//}
+
+//const caclArea = function(radius){
+ //   return 3.14 * radius**2; //advantage: we can find other stuff like volume by simply recalling
+   // return area; //we are not logging the console now, we are recalling the area.
+//}
+
+//const area = caclArea(5); //this calls the function
+//console.log(area); //this wouldnt work yet bc area is  not defined
+//console.log(area);
+
+// const calcVol = function(area){
+
+//};
+
+//calcVol(area)
+
+// regular function, reference
+
+//const calcArea = function(radius){
+  // return 3.14 * radius**2;
+//}
+
+//arrow function, cleaner way to write functions
+const calcArea = radius;  { //this only works when there is 1 parameter, need () if there's none >1 parameters
+return 3.14 * radius**2
+};
+
+
+
+const area = calcArea(5); 
+console.log('area is: ', area);
