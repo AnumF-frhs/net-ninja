@@ -314,7 +314,6 @@ greet();
 //console.log('area is: ', area);
 
 //net ninja 5: stop at 27:47
-//29/10
 //objects in java
 
 //propteries: email, username, gender...these have methods (i.e. login/logout)
@@ -329,8 +328,6 @@ let user = {
   email: 'crystal@gmailcom',
   location: 'location',
   blogs: ['why mac and cheese rules', '10 things to make with marmite']
-
-  
 };
 
 console.log(user);
@@ -435,3 +432,14 @@ const random = Math.random();
 console.log(random); //each time u reload, a diff # comes up btwn 0-1
 console.log(Math.round(random*100)); //makes 1 or 0, x10, gets any # btwn 1-100
 */
+
+//net ninja 6, 29/10
+//dom: document object model
+//dom: created by browser, document object --> to change/add content
+//make cool popups
+
+//some stuff was done in the inspect console.
+
+const para = document.querySelector('div.error'); //to grab an element from the dom, the first tagm 'p', to get 2nd...."error", to get the other error 'div.error'
+console.log(para);
+//stopped at 11:43
