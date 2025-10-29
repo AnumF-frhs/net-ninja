@@ -304,11 +304,134 @@ greet();
 //}
 
 //arrow function, cleaner way to write functions
-const calcArea = radius;  { //this only works when there is 1 parameter, need () if there's none >1 parameters
-return 3.14 * radius**2
+//const calcArea = radius;  { //this only works when there is 1 parameter, need () if there's none >1 parameters
+//return 3.14 * radius**2
+//};
+
+
+
+//const area = calcArea(5); 
+//console.log('area is: ', area);
+
+//net ninja 5: stop at 27:47
+//29/10
+//objects in java
+
+//propteries: email, username, gender...these have methods (i.e. login/logout)
+//object literal notation
+
+//object literals {} make the object... comma is used to add more
+
+/*
+let user = {
+  name: 'crystal',
+  age: 30,
+  email: 'crystal@gmailcom',
+  location: 'location',
+  blogs: ['why mac and cheese rules', '10 things to make with marmite']
+
+  
 };
 
+console.log(user);
+console.log(user.name);
 
+//user.age = 35
+console.log(user.age); //this is used to override 
+const key = 'location'; // same as saying (user['location'])
 
-const area = calcArea(5); 
-console.log('area is: ', area);
+console.log(user['email']);//used to update
+user['name']='chun-li';
+cponsole.log(user['name']);
+
+console.log (typeof user);
+
+*/
+//adding methods.
+/*
+let user = {
+  name: 'crystal',
+  age: 30,
+  email: 'crystal@gmailcom',
+  location: 'location',
+  blogs: ['why mac and cheese rules', '10 things to make with marmite'],
+  login: function(){
+    console.log('the user is logged in');
+  },
+  logout: function(){
+    console.log('the user logged out');
+  },
+  logBlogs: function(){
+    //console.log(blogs);
+    //console.log(this.blogs) //this=context object
+    console.log('this user has written the following blogs');
+    this.blogs.forEach(blog=> {
+      console.log(blog);
+    })
+  }
+  
+};
+user.logBlogs
+console.log(this);
+user.logout();
+user.login();
+
+const name = 'mario';
+name.toUpperCase();
+*/
+
+//more
+/*
+const blogs = [
+  {title: 'why mac and cheese rules', likes:30},
+  {title: '10 things to make with marmite', likes:50} //this is an object
+];
+*/
+
+//console.log(blogs);
+/*
+let user = {
+  name: 'crystal',
+  age: 30,
+  email: 'crystal@gmailcom',
+  location: 'location',
+  blogs: [
+     {title: 'why mac and cheese rules', likes:30},
+  {title: '10 things to make with marmite', likes:50} 
+  ],
+  login(){
+    console.log('the user logged in');
+  },
+  logout(){
+    console.log('the user logged ou')
+  },
+  logBlogs(){
+    console.log('this user has written the following blogs:');
+    this.blogs.forEach(blog => {
+      console.log(blog.title, blog.likes);
+    });
+  }
+  
+};
+
+user.logBlogs();
+*/
+
+//math objects!
+/*
+console.log(Math); //shows props of math
+console.log(Math.PI);
+console.log(Math.E);
+
+const area = 7.7;
+console.log(Math.round(area)); //rounds # to nearest integer
+console.log(Math.floor(area)); //floors number to lowest nearest integer (7.7 -->7)
+console.log(Math.ceil(area)); //opposite of floor, 7.7 --> 8
+console.log(Math.trunc(area)); //takes away decimalm --> 7
+
+//random number gen
+
+const random = Math.random();
+console.log(random); //each time u reload, a diff # comes up btwn 0-1
+console.log(Math.round(random*100)); //makes 1 or 0, x10, gets any # btwn 1-100
+*/
