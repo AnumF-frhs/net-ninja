@@ -440,6 +440,104 @@ console.log(Math.round(random*100)); //makes 1 or 0, x10, gets any # btwn 1-100
 
 //some stuff was done in the inspect console.
 
-const para = document.querySelector('div.error'); //to grab an element from the dom, the first tagm 'p', to get 2nd...."error", to get the other error 'div.error'
-console.log(para);
+//const para = document.querySelector('div.error'); //to grab an element from the dom, the first tagm 'p', to get 2nd...."error", to get the other error 'div.error'
+//console.log(para);
 //stopped at 11:43
+
+//multiple element grab
+/*
+const paras = document.querySelectorAll('p');
+const errors = document.querySelectorAll('.error');
+//paras.forEach(para => {
+//console.log(paras);
+//});
+console.log(errors); //0 is first, 1 is second bc js is 0 based
+*/
+
+//get element by ID
+/*
+const title = document.getElementById('page-title');
+console.log(title);
+
+
+//get elements by their class name
+const errors = document.getElementsByClassName('error');
+console.log(errors);
+console.log(errors[0]); //can't use for-each method bc it isnt a function.
+*/
+
+// get element bby tag name
+/*
+const paras = document.getElementsByTagName('p');
+console.log(paras); 
+console.log(paras[0]); */
+
+const para = document.querySelector('p');
+
+//console.log(para.innerText) //gets inner text of element "hello world"
+//para.innerText = 'im awesome!'; //changed hello, world to im awesome, overrides it
+
+//change text of many items at once
+
+//const paras = document.querySelectorAll('p');
+/*
+paras.forEach(para => {
+  console.log(para.innerText)
+  para.innerText += 'new text'; //just adding on, not overriding
+}); //puts these in console
+*/
+
+//const content = document.querySelector('.content');
+
+//console.log(content.innerHTML);
+//content.innerHTML += '<h2>THIS IS A NEW H2</h2>';
+/*
+const people = ['mario','luigi', 'yoshi'];
+people.forEach(persona => {
+  content.innerHTML += `<p>${people}</p>`;
+}); */
+/*
+const link = docuement.querySelector('a');
+
+console.log(link.getAttribute('href'));
+link.setAttribute('href', 'https://www.thenetninja.co.uk');
+link.innerText = 'The Net Ninja Website';
+
+const mssg = document.querySelector('p');
+
+console.log(mssg.getAttribute('class'));
+mssg.setAttribute('class', 'success'); //changes it
+mssg.setAttribute('style', 'color: green;'); //we can add stuff that isnt there.
+*/
+
+//const title = document.querySelector('h1');
+
+//title.setAttribute('style', 'margin: 50px;'); //it overwritten the orange text
+/*
+console.log(title.style); //in console you can see the css properties...to add or remove styles
+console.log(title.style.color);
+
+title.style.margin = '50 px'; //has the margin and color prop.
+title.style.color= 'crimson';
+title.style.fontSize = '60px';
+title.style.margin = ''; //to remove a property
+*/
+
+//add and remove classes
+/*
+const content = document.querySelector('p');
+console.log(content.classList);
+content.classList.add('error');
+content.classList.remove('error');
+content.classList.add('success'); */
+
+//he gives more examples...
+//innerText gets all the text that is visible inside an element
+//textContent gets ALL text including hidden
+//50:00-53:00 show exmaples...
+
+//toggle classes
+//const title = document.querySelector('.title');
+
+//title.classList.toggle('test');
+
